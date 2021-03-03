@@ -1,15 +1,14 @@
 module clkdiv(
 	input wire clk, 
-	//input reg counter,
 	output wire clkdiv
 	);
 
-reg [22:0]cnt;
-assign clkdiv = cnt[22];
+reg [20:0]cnt = 0;
+assign clkdiv = cnt[20];
 
 always @(posedge clk)
 begin
-	cnt <= (cnt === {23{1'b1}}) ? 23'h0 : cnt + 23'h1;
+	cnt <= (cnt === {21{1'b1}}) ? 21'h0 : cnt + 21'h1;
 end
 
 endmodule

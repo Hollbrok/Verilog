@@ -21,13 +21,14 @@ cnthex Cnthex1( .clk(clkdiv1), .hex(hex));
 
 clkdiv10 Clkdiv10( .clk(CLK), .clkdiv(clkdiv10));
 
-hex2seg Hex2seg1( .hex(hex[3:0]), .seg(seg_1));
-hex2seg Hex2seg2( .hex(hex[7:4]), .seg(seg_2));
-hex2seg Hex2seg3( .hex(hex[11:8]), .seg(seg_3));
+hex2seg Hex2seg1( .hex(hex[3:0]),   .seg(seg_1));
+hex2seg Hex2seg2( .hex(hex[7:4]),   .seg(seg_2));
+hex2seg Hex2seg3( .hex(hex[11:8]),  .seg(seg_3));
 hex2seg Hex2seg4( .hex(hex[15:12]), .seg(seg_4));
 
 wire [6:0]seg;
 wire [3:0]segen;
+
 shownumber Shownumber1( .clk10(clkdiv10), .seg1(seg_1), .seg2(seg_2), .seg3(seg_3), .seg4(seg_4), .seg(seg), .segen(segen));
 
 assign {DS_EN1, DS_EN2, DS_EN3, DS_EN4} = segen;

@@ -1,6 +1,6 @@
   
 module hex2seg(input wire [3:0]hex, 
-				   output reg [6:0]seg); // seg = {A, B, C, .. G}
+				   output reg [6:0]seg = 0); // seg = {A, B, C, .. G}
 
 always @(*)
 begin				
@@ -22,7 +22,7 @@ begin
 	4'hE: seg <= 7'b1001111;
 	4'hF: seg <= 7'b1000111;
 
-	default: seg = 7'b1111111;
+	default: seg <= 7'b1111111;
 	endcase
 
 end

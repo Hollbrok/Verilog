@@ -1,3 +1,3 @@
 Info (10281): Verilog HDL Declaration information at top.v(9): object "clkdiv1" differs only in case from object "Clkdiv1" in the same scope File: C:/repositories/Verilog/homework2/top.v Line: 9
 Info (10281): Verilog HDL Declaration information at top.v(10): object "clkdiv10" differs only in case from object "Clkdiv10" in the same scope File: C:/repositories/Verilog/homework2/top.v Line: 10
-Warning (10268): Verilog HDL information at hex2seg.v(7): always construct contains both blocking and non-blocking assignments File: C:/repositories/Verilog/homework2/hex2seg.v Line: 7
+Warning (10268): Verilog HDL information at shownumber.v(13): always construct contains both blocking and non-blocking assignments File: C:/repositories/Verilog/homework2/shownumber.v Line: 13
