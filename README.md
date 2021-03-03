@@ -7,7 +7,8 @@ Homeworks:
     - [X] D_latch
     - [X] D_flipflop
     - [X] test_benches for all logical elements.
-- [ ] Homework 2
+- [X] 4-значный счетчик шестнадцатиричных чисел
+	- [X] 1
 - [ ] Homework 3
 - [ ] Homework 4
 - [ ] Homework 5

@@ -1,0 +1,17 @@
+module top{
+	input CLK,
+	output DS_EN1, DS_EN2, DS_EN3, DS_EN4, DS_C
+};
+
+assign {DS_EN1, DS_EN2, DS_EN3, DS_EN4} = 4'b1111;
+
+reg [25:0] cnt;
+
+always @(posedge CLK)
+begin
+	cnt <= (cnt === {26{1'h1}}) ? 26'h0 : cnt + 26'h1;
+end
+
+assign DS_C = cnt[25];
+
+endmodule

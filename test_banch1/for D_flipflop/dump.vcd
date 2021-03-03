@@ -1,0 +1,201 @@
+$date
+	Wed Feb 24 01:43:14 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module testbench $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$var reg 1 # D $end
+$var reg 1 $ E $end
+$scope module D_flipflop $end
+$var wire 1 # D $end
+$var wire 1 $ E $end
+$var wire 1 % Ebar $end
+$var wire 1 & useless $end
+$var wire 1 ! Qbar $end
+$var wire 1 ' Q2 $end
+$var wire 1 " Q $end
+$scope module D1 $end
+$var wire 1 # D $end
+$var wire 1 ( Dbar $end
+$var wire 1 % E $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$var wire 1 & Qbar $end
+$var wire 1 ' Q $end
+$scope module SRr_latch $end
+$var wire 1 ' Q $end
+$var wire 1 & Qbar $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$upscope $end
+$upscope $end
+$scope module D2 $end
+$var wire 1 ' D $end
+$var wire 1 + Dbar $end
+$var wire 1 $ E $end
+$var wire 1 , R $end
+$var wire 1 - S $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$scope module SRr_latch $end
+$var wire 1 " Q $end
+$var wire 1 ! Qbar $end
+$var wire 1 , R $end
+$var wire 1 - S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0-
+0,
+0+
+1*
+0)
+0(
+1'
+0&
+1%
+0$
+1#
+x"
+x!
+$end
+#13
+1&
+1+
+0'
+1)
+1(
+0*
+0#
+#20
+1!
+0"
+0)
+0%
+1,
+1$
+#26
+0(
+1#
+#39
+1(
+0#
+#40
+1)
+1%
+0,
+0$
+#52
+0+
+1'
+0&
+0)
+0(
+1*
+1#
+#60
+1"
+0!
+0*
+0%
+1-
+1$
+#65
+1(
+0#
+#78
+0(
+1#
+#80
+1*
+1%
+0-
+0$
+#91
+1&
+1+
+0'
+1)
+1(
+0*
+0#
+#100
+1!
+0"
+0)
+0%
+1,
+1$
+#104
+0(
+1#
+#117
+1(
+0#
+#120
+1)
+1%
+0,
+0$
+#130
+0+
+1'
+0&
+0)
+0(
+1*
+1#
+#140
+1"
+0!
+0*
+0%
+1-
+1$
+#143
+1(
+0#
+#156
+0(
+1#
+#160
+1*
+1%
+0-
+0$
+#169
+1&
+1+
+0'
+1)
+1(
+0*
+0#
+#180
+1!
+0"
+0)
+0%
+1,
+1$
+#182
+0(
+1#
+#195
+1(
+0#
+#200
+1)
+1%
+0,
+0$
