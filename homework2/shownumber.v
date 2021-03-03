@@ -16,16 +16,16 @@ always @(posedge clk10) begin
 	flag <= (flag === 2'b11) ? 2'b0 : flag + 2'b1;
 	if(flag === 2'b11) begin
 		seg <= seg4;
-		segen = 4'b0111;
+		segen <= 4'b0111;
 	end else if(flag === 2'b10) begin
 		seg <= seg3;
-		segen = 4'b1011;
+		segen <= 4'b1011;
 	end else if(flag === 2'b01) begin
 		seg <= seg2;
-		segen = 4'b1101;
+		segen <= 4'b1101;
 	end else begin
 		seg <= seg1;
-		segen = 4'b1110;
+		segen <= 4'b1110;
 	end
 	
 end
