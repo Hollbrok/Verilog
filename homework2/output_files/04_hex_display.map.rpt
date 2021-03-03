@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 04_hex_display
-Wed Mar 03 12:05:21 2021
+Wed Mar 03 12:22:29 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 03 12:05:21 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 03 12:22:29 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 04_hex_display                              ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 104                                         ;
-;     Total combinational functions  ; 104                                         ;
+; Total logic elements               ; 98                                          ;
+;     Total combinational functions  ; 98                                          ;
 ;     Dedicated logic registers      ; 63                                          ;
 ; Total registers                    ; 63                                          ;
 ; Total pins                         ; 12                                          ;
@@ -159,18 +159,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
-; top.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v        ;         ;
-; clkdiv.v                         ; yes             ; User Verilog HDL File  ; C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/clkdiv.v     ;         ;
-; hex2seg.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/hex2seg.v    ;         ;
-; cnthex.v                         ; yes             ; User Verilog HDL File  ; C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/cnthex.v     ;         ;
-; clkdiv10.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/clkdiv10.v   ;         ;
-; shownumber.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/shownumber.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
+; top.v                            ; yes             ; User Verilog HDL File  ; C:/repositories/Verilog/homework2/top.v        ;         ;
+; clkdiv.v                         ; yes             ; User Verilog HDL File  ; C:/repositories/Verilog/homework2/clkdiv.v     ;         ;
+; hex2seg.v                        ; yes             ; User Verilog HDL File  ; C:/repositories/Verilog/homework2/hex2seg.v    ;         ;
+; cnthex.v                         ; yes             ; User Verilog HDL File  ; C:/repositories/Verilog/homework2/cnthex.v     ;         ;
+; clkdiv10.v                       ; yes             ; User Verilog HDL File  ; C:/repositories/Verilog/homework2/clkdiv10.v   ;         ;
+; shownumber.v                     ; yes             ; User Verilog HDL File  ; C:/repositories/Verilog/homework2/shownumber.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -178,16 +178,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 104       ;
+; Estimated Total logic elements              ; 98        ;
 ;                                             ;           ;
-; Total combinational functions               ; 104       ;
+; Total combinational functions               ; 98        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 47        ;
+;     -- 4 input functions                    ; 42        ;
 ;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 57        ;
+;     -- <=2 input functions                  ; 56        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 57        ;
+;     -- normal mode                          ; 51        ;
 ;     -- arithmetic mode                      ; 47        ;
 ;                                             ;           ;
 ; Total registers                             ; 63        ;
@@ -200,8 +200,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 34        ;
-; Total fan-out                               ; 447       ;
-; Average fan-out                             ; 2.34      ;
+; Total fan-out                               ; 425       ;
+; Average fan-out                             ; 2.30      ;
 +---------------------------------------------+-----------+
 
 
@@ -210,10 +210,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+-------------+--------------+
-; |top                        ; 104 (0)             ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |top                        ; top         ; work         ;
+; |top                        ; 98 (0)              ; 63 (0)                    ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |top                        ; top         ; work         ;
 ;    |clkdiv10:Clkdiv10|      ; 11 (11)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|clkdiv10:Clkdiv10      ; clkdiv10    ; work         ;
 ;    |clkdiv:Clkdiv1|         ; 23 (23)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|clkdiv:Clkdiv1         ; clkdiv      ; work         ;
-;    |cnthex:Cnthex1|         ; 22 (22)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|cnthex:Cnthex1         ; cnthex      ; work         ;
+;    |cnthex:Cnthex1|         ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|cnthex:Cnthex1         ; cnthex      ; work         ;
 ;    |hex2seg:Hex2seg1|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|hex2seg:Hex2seg1       ; hex2seg     ; work         ;
 ;    |hex2seg:Hex2seg2|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|hex2seg:Hex2seg2       ; hex2seg     ; work         ;
 ;    |hex2seg:Hex2seg3|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|hex2seg:Hex2seg3       ; hex2seg     ; work         ;
@@ -255,16 +255,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port         ; 12                          ;
 ; cycloneiii_ff         ; 63                          ;
 ;     plain             ; 63                          ;
-; cycloneiii_lcell_comb ; 104                         ;
+; cycloneiii_lcell_comb ; 98                          ;
 ;     arith             ; 47                          ;
 ;         2 data inputs ; 47                          ;
-;     normal            ; 57                          ;
+;     normal            ; 51                          ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 6                           ;
-;         4 data inputs ; 47                          ;
+;         2 data inputs ; 5                           ;
+;         4 data inputs ; 42                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.20                        ;
-; Average LUT depth     ; 2.23                        ;
+; Average LUT depth     ; 2.16                        ;
 +-----------------------+-----------------------------+
 
 
@@ -283,38 +283,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 03 12:04:54 2021
+    Info: Processing started: Wed Mar 03 12:22:02 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 04_hex_display -c 04_hex_display
 Warning (12473): User specified to use only one processors but 8 processors were detected which could be used to decrease run time.
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: top File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v Line: 1
+    Info (12023): Found entity 1: top File: C:/repositories/Verilog/homework2/top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clkdiv.v
-    Info (12023): Found entity 1: clkdiv File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/clkdiv.v Line: 1
+    Info (12023): Found entity 1: clkdiv File: C:/repositories/Verilog/homework2/clkdiv.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hex2seg.v
-    Info (12023): Found entity 1: hex2seg File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/hex2seg.v Line: 2
+    Info (12023): Found entity 1: hex2seg File: C:/repositories/Verilog/homework2/hex2seg.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file cnthex.v
-    Info (12023): Found entity 1: cnthex File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/cnthex.v Line: 1
+    Info (12023): Found entity 1: cnthex File: C:/repositories/Verilog/homework2/cnthex.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clkdiv10.v
-    Info (12023): Found entity 1: clkdiv10 File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/clkdiv10.v Line: 1
+    Info (12023): Found entity 1: clkdiv10 File: C:/repositories/Verilog/homework2/clkdiv10.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shownumber.v
-    Info (12023): Found entity 1: shownumber File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/shownumber.v Line: 1
+    Info (12023): Found entity 1: shownumber File: C:/repositories/Verilog/homework2/shownumber.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "clkdiv" for hierarchy "clkdiv:Clkdiv1" File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v Line: 19
-Info (12128): Elaborating entity "cnthex" for hierarchy "cnthex:Cnthex1" File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v Line: 20
-Info (12128): Elaborating entity "clkdiv10" for hierarchy "clkdiv10:Clkdiv10" File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v Line: 22
-Info (12128): Elaborating entity "hex2seg" for hierarchy "hex2seg:Hex2seg1" File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v Line: 24
-Info (12128): Elaborating entity "shownumber" for hierarchy "shownumber:Shownumber1" File: C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/top.v Line: 31
+Info (12128): Elaborating entity "clkdiv" for hierarchy "clkdiv:Clkdiv1" File: C:/repositories/Verilog/homework2/top.v Line: 19
+Info (12128): Elaborating entity "cnthex" for hierarchy "cnthex:Cnthex1" File: C:/repositories/Verilog/homework2/top.v Line: 20
+Info (12128): Elaborating entity "clkdiv10" for hierarchy "clkdiv10:Clkdiv10" File: C:/repositories/Verilog/homework2/top.v Line: 22
+Info (12128): Elaborating entity "hex2seg" for hierarchy "hex2seg:Hex2seg1" File: C:/repositories/Verilog/homework2/top.v Line: 24
+Info (12128): Elaborating entity "shownumber" for hierarchy "shownumber:Shownumber1" File: C:/repositories/Verilog/homework2/top.v Line: 31
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/output_files/04_hex_display.map.smsg
+Info (144001): Generated suppressed messages file C:/repositories/Verilog/homework2/output_files/04_hex_display.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 104 logic cells
+    Info (21061): Implemented 98 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4735 megabytes
-    Info: Processing ended: Wed Mar 03 12:05:21 2021
+    Info: Peak virtual memory: 4733 megabytes
+    Info: Processing ended: Wed Mar 03 12:22:29 2021
     Info: Elapsed time: 00:00:27
     Info: Total CPU time (on all processors): 00:00:59
 
@@ -322,6 +322,6 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Danik/drec-fpga-intro/problems/04_hex_display/output_files/04_hex_display.map.smsg.
+The suppressed messages can be found in C:/repositories/Verilog/homework2/output_files/04_hex_display.map.smsg.
 
 
