@@ -1,2 +1,2 @@
 *.bak
-*.v.bak
+*.[v.bak]

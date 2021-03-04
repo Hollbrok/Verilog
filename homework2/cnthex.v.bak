@@ -1,8 +1,0 @@
-module cnthex(
-	input clk,
-	output hex[3:0]
-);
-
-always @(posedge clk)
-	hex <= hex + clk;
-end
