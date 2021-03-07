@@ -1,5 +1,5 @@
 Fitter report for 04_hex_display
-Wed Mar 03 20:42:38 2021
+Fri Mar 05 16:49:00 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 03 20:42:38 2021       ;
+; Fitter Status                      ; Successful - Fri Mar 05 16:49:00 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 04_hex_display                              ;
 ; Top-level Entity Name              ; top                                         ;
@@ -1149,9 +1149,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/repositories/Verilog/homework2/output_files/04_hex_display.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 89 warnings
-    Info: Peak virtual memory: 5077 megabytes
-    Info: Processing ended: Wed Mar 03 20:42:39 2021
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 5079 megabytes
+    Info: Processing ended: Fri Mar 05 16:49:01 2021
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:06
 
 
