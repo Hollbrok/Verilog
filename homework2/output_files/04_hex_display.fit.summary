@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Mar 05 16:49:00 2021
+Fitter Status : Successful - Mon Mar 08 12:45:52 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : 04_hex_display
 Top-level Entity Name : top
@@ -7,8 +7,8 @@ Device : EP4CE6E22C8
 Timing Models : Final
 Total logic elements : 97 / 6,272 ( 2 % )
     Total combinational functions : 97 / 6,272 ( 2 % )
-    Dedicated logic registers : 62 / 6,272 ( < 1 % )
-Total registers : 62
+    Dedicated logic registers : 51 / 6,272 ( < 1 % )
+Total registers : 51
 Total pins : 12 / 92 ( 13 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )

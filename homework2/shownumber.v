@@ -10,29 +10,32 @@ module shownumber(
 
 reg [1:0]flag = 0;
 
-always @(posedge clk10)
-begin
+always @(posedge clk10) begin
 	flag <= flag + 1'b1;
-	if(flag === 2'b11)
-		begin
-			seg   = seg4;
-			segen = 4'b0111;
-		end 
-	else if(flag === 2'b10) 
-		begin
-			seg   = seg3;
-			segen = 4'b1011;
-		end 
-	else if(flag === 2'b01) 
-		begin
-			seg   = seg2;
-			segen = 4'b1101;
-		end 
-	else if(flag === 2'b00) 
-	begin	
-		seg   = seg1;
-		segen = 4'b1110;
-	end
 end
+
+always @(*) begin
+    case (flag)
+
+        2'b00: segen  = 4'b1110;
+        2'b01: segen  = 4'b1101;
+        2'b10: segen  = 4'b1011;
+        2'b11: segen  = 4'b0111;
+
+    endcase
+end
+
+always @(*) begin
+    case (flag)
+
+        2'b00: seg = seg1;
+        2'b01: seg = seg2;
+        2'b10: seg = seg3;
+        2'b11: seg = seg4;
+        
+    endcase
+end
+
+
 
 endmodule
