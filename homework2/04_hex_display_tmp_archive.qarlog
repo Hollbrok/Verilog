@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	C:/repositories/Verilog/homework2/04_hex_display_tmp_archive.qarlog
+
+Archive:	C:/repositories/Verilog/homework2/04_hex_display_tmp_archive.qar
+Date:		Fri Mar 19 19:29:22 2021
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/repositories/Verilog/homework2/04_hex_display.qpf
+C:/repositories/Verilog/homework2/04_hex_display.qsf
+C:/repositories/Verilog/homework2/clkdiv.v
+C:/repositories/Verilog/homework2/clkdiv10.v
+C:/repositories/Verilog/homework2/cnthex.v
+C:/repositories/Verilog/homework2/hex2seg.v
+C:/repositories/Verilog/homework2/shownumber.v
+C:/repositories/Verilog/homework2/top.v
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 9 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri Mar 19 19:29:24 2021
+Source archive file:	C:/repositories/Verilog/homework2/04_hex_display_tmp_archive.qar
+Archive was extracted into	C:/repositories/Verilog/homework/
+		 - successfully.
