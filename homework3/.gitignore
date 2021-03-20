@@ -1,2 +1,6 @@
 *.bak
 *.[v.bak]
+*.qpf
+*.qsf
+*.qws
+*.qarlog
