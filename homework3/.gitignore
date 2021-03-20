@@ -4,3 +4,4 @@
 *.qsf
 *.qws
 *.qarlog
+*.[cpp.save]
