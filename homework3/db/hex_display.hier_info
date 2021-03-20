@@ -1,0 +1,46 @@
+|hex_display
+clk => i[0].CLK
+clk => i[1].CLK
+data[0] => Mux0.IN14
+data[1] => Mux1.IN14
+data[2] => Mux2.IN14
+data[3] => Mux3.IN14
+data[4] => Mux0.IN10
+data[5] => Mux1.IN10
+data[6] => Mux2.IN10
+data[7] => Mux3.IN10
+data[8] => Mux0.IN6
+data[9] => Mux1.IN6
+data[10] => Mux2.IN6
+data[11] => Mux3.IN6
+data[12] => Mux0.IN2
+data[13] => Mux1.IN2
+data[14] => Mux2.IN2
+data[15] => Mux3.IN2
+anodes[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodes[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodes[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodes[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+segments[0] <= hex_to_seg:hex_to_seg.segments
+segments[1] <= hex_to_seg:hex_to_seg.segments
+segments[2] <= hex_to_seg:hex_to_seg.segments
+segments[3] <= hex_to_seg:hex_to_seg.segments
+segments[4] <= hex_to_seg:hex_to_seg.segments
+segments[5] <= hex_to_seg:hex_to_seg.segments
+segments[6] <= hex_to_seg:hex_to_seg.segments
+
+
+|hex_display|hex_to_seg:hex_to_seg
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
