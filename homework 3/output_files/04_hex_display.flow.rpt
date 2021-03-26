@@ -1,5 +1,5 @@
 Flow report for 04_hex_display
-Fri Mar 19 20:03:29 2021
+Fri Mar 26 13:48:35 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 19 20:03:25 2021       ;
+; Flow Status                        ; Successful - Fri Mar 26 13:48:30 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 04_hex_display                              ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 75 / 6,272 ( 1 % )                          ;
-;     Total combinational functions  ; 75 / 6,272 ( 1 % )                          ;
-;     Dedicated logic registers      ; 46 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 46                                          ;
+; Total logic elements               ; 83 / 6,272 ( 1 % )                          ;
+;     Total combinational functions  ; 83 / 6,272 ( 1 % )                          ;
+;     Dedicated logic registers      ; 37 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 37                                          ;
 ; Total pins                         ; 12 / 92 ( 13 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Total memory bits                  ; 256 / 276,480 ( < 1 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/19/2021 20:03:01 ;
+; Start date & time ; 03/26/2021 13:48:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; 04_hex_display      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+----------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+----------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 61722474110963.161617338001420         ; --             ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 61722474110963.161675568306460         ; --             ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --             ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --             ; --          ; --         ;
 ; MISC_FILE                           ; rom_bb.v                               ; --             ; --          ; --         ;
@@ -100,11 +100,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4720 MB             ; 00:00:33                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 5080 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4665 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4706 MB             ; 00:00:03                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4727 MB             ; 00:00:39                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5078 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4668 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4707 MB             ; 00:00:03                           ;
+; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
