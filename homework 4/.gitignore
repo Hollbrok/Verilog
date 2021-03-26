@@ -1,0 +1,6 @@
+*.bak
+*.qpf
+*.qsf
+*.qws
+*.qarlog
+*.[cpp.save]
