@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Mar 30 13:07:57 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : 04_hex_display
+Top-level Entity Name : top
+Family : Cyclone IV E
+Total logic elements : 86
+    Total combinational functions : 86
+    Dedicated logic registers : 40
+Total registers : 40
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
