@@ -1,19 +1,19 @@
 |top
-CLK => CLK.IN2
-DS_EN1 <= shownumber:Shownumber1.segen
-DS_EN2 <= shownumber:Shownumber1.segen
-DS_EN3 <= shownumber:Shownumber1.segen
-DS_EN4 <= shownumber:Shownumber1.segen
-DS_A <= shownumber:Shownumber1.seg
-DS_B <= shownumber:Shownumber1.seg
-DS_C <= shownumber:Shownumber1.seg
-DS_D <= shownumber:Shownumber1.seg
-DS_E <= shownumber:Shownumber1.seg
-DS_F <= shownumber:Shownumber1.seg
-DS_G <= shownumber:Shownumber1.seg
+CLK => CLK.IN5
+DS_EN1 << shownumber:Shownumber1.segen
+DS_EN2 << shownumber:Shownumber1.segen
+DS_EN3 << shownumber:Shownumber1.segen
+DS_EN4 << shownumber:Shownumber1.segen
+DS_A << shownumber:Shownumber1.seg
+DS_B << shownumber:Shownumber1.seg
+DS_C << shownumber:Shownumber1.seg
+DS_D << shownumber:Shownumber1.seg
+DS_E << shownumber:Shownumber1.seg
+DS_F << shownumber:Shownumber1.seg
+DS_G << shownumber:Shownumber1.seg
 
 
-|top|clkdiv:clkdiv_counter
+|top|clkdiv:Counter
 clk => cnt[0].CLK
 clk => cnt[1].CLK
 clk => cnt[2].CLK
@@ -35,13 +35,10 @@ clk => cnt[17].CLK
 clk => cnt[18].CLK
 clk => cnt[19].CLK
 clk => cnt[20].CLK
-clk => cnt[21].CLK
-clk => cnt[22].CLK
-clk => cnt[23].CLK
-clkdiv <= cnt[23].DB_MAX_OUTPUT_PORT_TYPE
+clkdiv <= cnt[20].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top|clkdiv:Clkdiv_update
+|top|clkdiv:Updater
 clk => cnt[0].CLK
 clk => cnt[1].CLK
 clk => cnt[2].CLK
@@ -52,7 +49,84 @@ clk => cnt[6].CLK
 clk => cnt[7].CLK
 clk => cnt[8].CLK
 clk => cnt[9].CLK
-clkdiv <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clkdiv <= cnt[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|clkdiv:Sendler
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clkdiv <= cnt[16].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|clkdiv:Clk_a
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clkdiv <= cnt[20].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|clkdiv:Clk_b
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clkdiv <= cnt[20].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|rom:grey_data
@@ -237,6 +311,79 @@ q_a[12] <= ram_block1a12.PORTADATAOUT
 q_a[13] <= ram_block1a13.PORTADATAOUT
 q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
+
+
+|top|resynchronizer:clkdmncrossing
+clka => ack[1].CLK
+clka => ack[0].CLK
+clkb => bout[0]~reg0.CLK
+clkb => bout[1]~reg0.CLK
+clkb => bout[2]~reg0.CLK
+clkb => bout[3]~reg0.CLK
+clkb => bout[4]~reg0.CLK
+clkb => bout[5]~reg0.CLK
+clkb => bout[6]~reg0.CLK
+clkb => bout[7]~reg0.CLK
+clkb => bout[8]~reg0.CLK
+clkb => bout[9]~reg0.CLK
+clkb => bout[10]~reg0.CLK
+clkb => bout[11]~reg0.CLK
+clkb => bout[12]~reg0.CLK
+clkb => bout[13]~reg0.CLK
+clkb => bout[14]~reg0.CLK
+clkb => bout[15]~reg0.CLK
+clkb => ack[2].CLK
+clkb => bData[0].CLK
+clkb => bData[1].CLK
+clkb => bData[2].CLK
+clkb => bData[3].CLK
+clkb => bData[4].CLK
+clkb => bData[5].CLK
+clkb => bData[6].CLK
+clkb => bData[7].CLK
+clkb => bData[8].CLK
+clkb => bData[9].CLK
+clkb => bData[10].CLK
+clkb => bData[11].CLK
+clkb => bData[12].CLK
+clkb => bData[13].CLK
+clkb => bData[14].CLK
+clkb => bData[15].CLK
+clkb => aenable[1].CLK
+clkb => aenable[0].CLK
+data_input[0] => aData[0].DATAIN
+data_input[1] => aData[1].DATAIN
+data_input[2] => aData[2].DATAIN
+data_input[3] => aData[3].DATAIN
+data_input[4] => aData[4].DATAIN
+data_input[5] => aData[5].DATAIN
+data_input[6] => aData[6].DATAIN
+data_input[7] => aData[7].DATAIN
+data_input[8] => aData[8].DATAIN
+data_input[9] => aData[9].DATAIN
+data_input[10] => aData[10].DATAIN
+data_input[11] => aData[11].DATAIN
+data_input[12] => aData[12].DATAIN
+data_input[13] => aData[13].DATAIN
+data_input[14] => aData[14].DATAIN
+data_input[15] => aData[15].DATAIN
+asend => always4.IN1
+bout[0] <= bout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[1] <= bout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[2] <= bout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[3] <= bout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[4] <= bout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[5] <= bout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[6] <= bout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[7] <= bout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[8] <= bout[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[9] <= bout[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[10] <= bout[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[11] <= bout[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[12] <= bout[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[13] <= bout[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[14] <= bout[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bout[15] <= bout[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|hex2seg:Hex2seg1
